@@ -50,4 +50,21 @@ body{
   background: linear-gradient(cornflowerblue, black); 
 }
 
+.projectDescription{
+  color: azure;
+}
 
+.projectTitle{
+  color: azure;
+}
+
+.largeview{
+  width: 40vw;
+  height: 60vh;
+}
+
+iframe{
+  height: 200px;
+  width: 320px;
+  transition: all 0.5s;
+}
