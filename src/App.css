@@ -18,27 +18,36 @@
 #mainContainer{
   display: flex;
   padding: 40px;
-  justify-content: space-between;
-}
-
-#resume-box{
-  display: flex;
-  justify-content: center;
-  height: 500px;
-  width: 800px;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contactInfo{
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid black;
+  width: 420px;
+  align-items: center;
+  background-color: cornsilk;
 }
 
 #introBox{
   border: 1px solid black;
-  width: 500px;
+  width: 400px;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: cornsilk;
 }
 
+#profilePic{
+  width: 420px;
+}
 
+body{
+  background: linear-gradient(cornflowerblue, black); 
+}
 
 
