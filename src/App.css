@@ -58,9 +58,13 @@ body{
   color: azure;
 }
 
+.link{
+  color: azure
+}
+
 .largeview{
-  width: 40vw;
-  height: 60vh;
+  width: 95vw;
+  height: 95vh;
 }
 
 iframe{

@@ -8,7 +8,9 @@ class ProjectView extends React.Component{
             {
                 title: 'Music Playlist App', 
                 deployedURL: 'https://master.d37fvqqdh284tz.amplifyapp.com/',
-                desc: 'This is a full CRUD application I created that allows the user to create, update, and delete items from a playlist. It was made using React, JSX, PSQL and is fully deployed on an Amazon EC2 instance.'
+                desc: 'This is a full CRUD application I created that allows the user to create, update, and delete items from a playlist. It was made using React, JSX, PSQL and is fully deployed on an Amazon EC2 instance.',
+                link: 'https://master.d37fvqqdh284tz.amplifyapp.com/',
+                expanded: false
             },
             {
                 title: 'Netflix Replica App',
@@ -20,12 +22,14 @@ class ProjectView extends React.Component{
                 title: 'DemonSlayer',
                 deployedURL: 'https://bayarens.github.io/DemonSlayer-Game/',
                 desc: 'This is a game I made in the canvas API in the JavaScript library, and was styled with HTML & CSS. It is deployed via GitHub',
+                link: 'https://bayarens.github.io/DemonSlayer-Game/',
                 expanded: false
             },
             {
                 title: 'Calculator',
                 deployedURL: 'https://bayarens.github.io/Calculator/',
                 desc: 'This is the first real project I worked on, it is a basic calculator I made from scratch using JavaScript and styled with HTML and CSS.',
+                link: 'https://bayarens.github.io/Calculator/',
                 expanded: false
             }
         ],
@@ -47,6 +51,7 @@ class ProjectView extends React.Component{
                    <iframe className={project.expanded ? 'largeview' : 'minview'} src={project.deployedURL}></iframe>
                    <button onClick={() => this.toggleExpanded(project)}>Expand</button>
                    <p className='projectDescription'>{project.desc}</p>
+                   <p className='link'>Link: {project.link}</p>
                 </div>)}
             </div>
         )
