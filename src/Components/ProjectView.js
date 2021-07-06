@@ -16,6 +16,7 @@ class ProjectView extends React.Component{
                 title: 'Netflix Replica App',
                 deployedURL: 'placeholder',
                 desc: 'This is a Netflix replica React App that I created using an API.',
+                link: 'https://bayarens.github.io/nexflix-replica/',
                 expanded: false
             },
             {
