@@ -22,7 +22,7 @@ class ProjectView extends React.Component {
                 expanded: false
             },
             {
-                title: 'DemonSlayer',
+                title: 'DemonSlayer Game',
                 deployedURL: 'https://bayarens.github.io/DemonSlayer-Game/',
                 desc: 'This is a game I made in the canvas API in the JavaScript library, and was styled with HTML & CSS. It is deployed via GitHub',
                 link: 'https://bayarens.github.io/DemonSlayer-Game/',
@@ -48,13 +48,17 @@ class ProjectView extends React.Component {
         this.setState({ projects })
     }
 
+    toggleExpandedButton = (e) => {
+        
+    }
+
     render() {
         return (
             <div>
                 {this.state.projects.map(project => <div key={project.title}>
                     <h3 className='projectTitle'>{project.title}</h3>
                     <iframe className={project.expanded ? 'largeview' : 'minview'} src={project.deployedURL}></iframe>
-                    <button onClick={() => this.toggleExpanded(project)}>Expand</button>
+                    <button className='expandButton' onClick={() => this.toggleExpanded(project)}><img src="https://img.icons8.com/material-outlined/24/000000/expand--v2.png"/></button>
                     <div className='infoBox'>
                         <p className='projectDescription'>{project.desc}</p>
                         <p className='link'>Link: {project.link}</p>
