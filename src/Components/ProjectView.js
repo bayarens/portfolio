@@ -6,6 +6,14 @@ class ProjectView extends React.Component {
     state = {
         projects: [
             {
+                title: 'Our Future Genreration, Raffle Page',
+                deployedURL: 'https://ofg-raffle.herokuapp.com/',
+                desc: 'Took a leadership role in a group project to injected a React component into a WordPress website.  Created a full CRUD application that creates and runs raffles on a website of a non-profit organization.  Set up the API that allowed the front end of our site to communicate with the database, designed and styled the front end pages for the raffles, added administrative functionality to the site, and wrote the function that chooses the winner of the raffle and notifies the winner and site admins with an email.',
+                link: 'https://ofg-raffle.herokuapp.com/',
+                github: 'https://github.com/Nebula-Academy/OFG-Raffle',
+                expanded: false
+            },
+            {
                 title: 'Music Playlist App',
                 deployedURL: 'https://master.d37fvqqdh284tz.amplifyapp.com/',
                 desc: 'This is a full CRUD application I created that allows the user to create, update, and delete items from a playlist. It was made using React, JSX, PSQL and is fully deployed on an Amazon EC2 instance.',
