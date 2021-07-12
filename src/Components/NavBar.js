@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import resume from './Resume.V3.pdf';  
+import resume from './Resume.pdf';  
 
 export default function NavBar(props){
     return(
