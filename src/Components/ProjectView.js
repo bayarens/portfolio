@@ -62,7 +62,7 @@ class ProjectView extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id='projectViews'>
                 {this.state.projects.map(project => <div key={project.title}>
                     <h3 className='projectTitle'>{project.title}</h3>
                     <iframe className={project.expanded ? 'largeview' : 'minview'} src={project.deployedURL}></iframe>
