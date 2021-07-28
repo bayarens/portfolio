@@ -59,10 +59,17 @@ body{
   color: azure;
 }
 
+#projectViews{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .largeview{
   width: 95vw;
   height: 95vh;
 }
+
 
 iframe{
   height: 200px;

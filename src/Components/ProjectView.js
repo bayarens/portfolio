@@ -68,7 +68,7 @@ class ProjectView extends React.Component {
                     <h3 className='projectTitle'>{project.title}</h3>
                     <iframe className={project.expanded ? 'largeview' : 'minview'} src={project.deployedURL}></iframe>
                     {/* <button className='expandButton' onClick={() => this.toggleExpanded(project)}><img src="https://img.icons8.com/material-outlined/24/000000/expand--v2.png"/></button> */}
-                    <AntSwitch  onChange={() => this.toggleExpanded(project)}/>
+                    <AntSwitch onChange={() => this.toggleExpanded(project)}/>
                     <div className='infoBox'>
                         <p className='projectDescription'>{project.desc}</p>
                         <p className='link'>Link: {project.link}</p>

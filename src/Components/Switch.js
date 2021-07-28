@@ -34,20 +34,20 @@ const AntSwitch = withStyles((theme) => ({
     border: `1px solid ${theme.palette.grey[500]}`,
     borderRadius: 16 / 2,
     opacity: 1,
-    backgroundColor: theme.palette.common.white
+    backgroundColor: theme.palette.common.white,
+    width: 40,
   },
   checked: {}
 }))(Switch);
 
-export default function CustomizedSwitches() {
+export default function CustomizedSwitches(props) {
   const [state, setState] = React.useState({
-    checkedA: true,
-    checkedB: true,
-    checkedC: true
+    checkedC: false
   });
 
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
+    props.onChange()
   };
 
   return (
@@ -57,6 +57,7 @@ export default function CustomizedSwitches() {
           <Grid item>Min</Grid>
           <Grid item>
             <AntSwitch
+              className='switch'
               checked={state.checkedC}
               onChange={handleChange}
               name="checkedC"
