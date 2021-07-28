@@ -68,5 +68,3 @@ export default function CustomizedSwitches() {
     </FormGroup>
   );
 }
-
-export default AntSwitch
