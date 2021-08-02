@@ -54,7 +54,7 @@ export default function CenteredTabs() {
                     centered
                 >
                     <Link to='/' onClick={() => setValue(0)} > <Tab label="Home" > <Home/> </Tab> </Link>
-                    <Tab label="Resume" target='_blank' href='https://bayleyarens.com/test-resume.pdf'/>
+                    <Tab label="Resume" target='_blank' href='https://bayleyarens.com/Resume.pdf'/>
                     <Link to='/projects' onClick={() => setValue(2)}> <Tab label="Projects"> </Tab> </Link>
                 </Tabs>
             </Paper>
